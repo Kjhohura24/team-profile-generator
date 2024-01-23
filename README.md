@@ -17,7 +17,7 @@ To contribute to this project, please make the changes on your file and submit a
 The application can be tested by running it and follwoing the input instrustions.
 
 ## Question 
-Please fell free to contact me on kjhohura@gmail.com
+Please feel free to contact me on kjhohura@gmail.com
 
 ## Result 
-
+(https://github.com/Kjhohura24/team-profile-generator/blob/main/assets/Team.png)
