@@ -51,7 +51,7 @@ inquirer.prompt([
             if (!input) {
                 return "Please enter a valid email address";
             }
-            if (!/\A+@\A+\.\A+/.test(input)) {
+            if (!/\S+@\S+\.\S+/.test(input)) {
                 return "Please enter a valid email address";
             }
             return true;
@@ -72,9 +72,11 @@ inquirer.prompt([
             return true;
         }
     },
-]).then(responce => {
-    const manager = new Manager(response.name, responce.id, responce.email, responce.officeNumber);
+]).then(response => {
+    // populate manager info
+    const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
     employees.push(manager);
+    // promptForNexEmployee ()
     promptForNextEmployee();
 })
 }
